@@ -13,7 +13,7 @@ public class MyController1 {
 
 	@GetMapping("/hello")
 	public String hello() {
-		return "hello first service!";
+		return "hello first service! 1";
 	}
 
 }
