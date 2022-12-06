@@ -1,6 +1,6 @@
-FROM openjdk:8-jdk-alpine 
+FROM openjdk:11
 VOLUME /tmp 
-ARG JAR_FILE=build/libs/retrospect-0.0.1-SNAPSHOT.jar 
+ARG JAR_FILE=build/libs/msa-back1-0.0.1-SNAPSHOT.jar
 COPY ${JAR_FILE} app.jar 
 EXPOSE 9090 
 ENTRYPOINT ["java","-jar","/app.jar"]
